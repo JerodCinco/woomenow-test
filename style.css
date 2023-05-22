@@ -1,0 +1,593 @@
+*
+{
+    /* removing all default margins that search engines initialize (usually 10 0) */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Fraunces', serif;
+
+}
+
+
+/*--------------------THIS SECTION IS FOR THE NAV BAR AND TOP OF THE SCREEN--------------------*/
+
+body
+{
+   
+    font-family: 'Fraunces', serif;
+    /* font-family: 'Arapey', serif; */
+    font-weight: 200;
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+    url("img/backdrop2.jpg"); 
+    /* background-color: black; */
+    /* to remove excess whitespace and the scroll bar */
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+
+
+/* */
+header
+{
+    /* these settings are so the nav bar takes up all the space it needs. */
+    height: 100%;
+    width: 100%;
+    /* background-image: url(img/landscape.jpg); */
+    /* notice that it doens't load up on legacy/live servers. */
+    background-size: cover;
+}
+
+.navbar 
+{
+    position: absolute;
+    margin: 50px;       /* 50px of space in each direction, all around */
+    display: flex;      /* to align the elements with the ADVENTURE title */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -2.5vh;
+}
+
+.navbar a
+{
+    color: white;
+}
+
+.navbar .logo-pic
+{
+    width: 16vw;
+    height: 8vh;
+    font-size: 2em;     /*   em generally means the point size of the font in question    */
+    font-weight: bold;
+    margin-left: 2vw;
+    margin-top: 4vh;  
+}
+
+
+.navbar .nav-links ul 
+{
+    display: flex;      /* this puts the nav-link elements side by side instead of being stacked on each other */
+    margin-right: 5vw;
+}
+
+.navbar .nav-links ul li
+{
+    margin: 0 10px;     /* 0 margin on top & bottom, 60px of margin on left & right */
+}
+
+.navbar .nav-links ul li a
+{
+    /* we can't put these in header ul li as they target the text */
+    text-decoration: none;
+
+    /* this is extra padding (15px on the side plus the 10px from the previous selector) */
+    padding: 6px 15px;
+    color: #fff;
+    /* after hovering over the menu item, make the white background rounded */
+    border-radius: 20px;
+}
+
+/* this targets the HOME button */
+.navbar .nav-links ul li.active a
+{
+    color: #ed3c57;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar .nav-links ul li.active a:hover
+{
+    background: #fff;
+}
+
+.navbar .menu-hamburger 
+{
+    /* we only want the hamburger menu to display when the screen size width is 900px and below. */
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 75px;
+    width: 35px;
+}
+
+
+/*--------------------THIS SECTION IS FOR THE BUTTON AND THE TITLE IN THE MIDDLE--------------------*/
+
+.content
+{
+    /*  this destroys hovering on the home page functionality
+    display: block;
+    position: relative;
+    */
+    padding: 7vh 20vw;
+    text-align: center;
+}
+
+
+/* this is for "make date night a priority" text */
+.content h1
+{
+    font-size: 37px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+/* to create hover effect 
+.content h1:hover
+{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+*/
+
+/* for "unlock a core memory / select a state" button */
+.content a
+{
+    text-decoration: none;
+    display: block;
+    color: black;
+    background-color: #fff;
+    font-size: 35px;
+    border: 2px solid black;
+    /* padding 14px on the top and bottom and 70 on the left and right*/
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 75vh;
+    transition: 0.3s;
+}
+
+.content a:hover
+{
+    background: black;
+    color: #fff;
+}
+
+
+
+/*--------------------THIS SECTION IS FOR HERO VIDEO--------------------*/
+
+video
+{
+    position: absolute;
+    
+    /* backdrop ver.*/
+    top: 15vh;
+    left: 5vw;
+    width: 90vw;
+    height: 70vh;
+    
+
+    /* full video ver (not patched for mobile
+    width: 105vw;
+    height: 105vh;
+    margin-left: -3%;
+    */
+    
+
+    object-fit: cover;
+    display: block;
+    
+    /* set z-index to let the navbar and everything be infront of the video */
+    z-index: -1;
+}
+
+/*--------------------THIS SECTION IS FOR INFLUENCERS TAB--------------------*/
+
+.influencers
+{
+    
+    width: 100%;
+    position: relative;
+    padding: 5% 25%;
+    /* background: orange; */
+    /* background-image: url("img/backdrop2.jpg"); */
+}
+
+.container
+{
+    margin: 20px 40px;
+    color: white;
+}
+
+/* this is for "meet Locals in Your City!*/
+.heading
+{
+    display: inline;
+    text-align: center;
+    font-size: 60px;
+    background-color: rgba(56, 56, 56, 0.5);
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px 15px;
+    color: #fff;
+}
+
+.heading span 
+{
+    font-size: 30px;
+}
+
+.profiles
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+    margin-right: 50%;
+}
+
+.profile
+{   /*  flex-basis CSS property sets the initial main size of a flex item */
+    flex-basis: 180px;
+}
+
+.profile .profile-img 
+{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.profile:hover .profile-img
+{
+    filter: grayscale(0);
+}
+
+.user-name
+{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.profile h5
+{
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #ccc;
+}
+
+/* for the "see locals near you!" button */
+h3
+{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 35px;
+    border: 2px solid #fff;
+    /* padding 14px on the top and bottom and 70 on the left and right*/
+    padding: 14px 70px;
+    font-weight: 200;
+
+    margin-right: 50%;
+    display: block;
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+
+}
+
+h3:hover
+{
+    background: black;
+    color: #fff;
+}
+
+.profile p
+{
+    font-size: 10px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------THIS SECTION IS FOR SMARTPHONE SCREENS--------------------*/
+
+/* 
+for any screen sizes below a width of 900px, 
+lets hide the nav links and display a hamburger menu for mobile. 
+*/
+@media screen and (max-width: 900px)
+{
+
+    html, body
+    {
+        /* to remove excess whitespace */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+
+
+    }
+    
+    /* 
+    this is to reposition the ADVENTURE text, but your code
+    (a little different than the video) seems to do this already/
+    */
+
+    .navbar
+    {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .navbar .logo-pic
+    {
+        width: 50%;
+        height: 20%;
+        font-size: 2em;     /*   em generally means the point size of the font in question    */
+        font-weight: bold;
+        margin-left: -6vw;
+        margin-top: 5vh;  
+    }
+    
+
+    .navbar .menu-hamburger 
+    {   /* why block and not flex here? */
+        display: block;
+        margin-top: 4vh;
+        
+    }
+
+    .nav-links
+    {   
+            /* */
+            top: -50px;
+            left: -50px;
+        
+            /* 
+            instead of displaying this on the screen, when the hamburger menu is 
+            clicked these nav links will show.  
+            */
+            position: absolute;
+
+            /* TIP: we can use background color to see how much 
+            space (including margin) the targeted class takes up. */
+            /* 
+            don't use decimals, they're not supported on safari iOS 
+            background-color: rgba(255, 255, 255, 0.299); 
+            */
+            background-color: rgba(255, 255, 255, 0.299);
+
+            /* to blur the background, including the webkit fixed the blur effect on mobile hamburger menu*/
+            -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+            /* 
+            using width 100% so that the nav links can take up the whole screen 
+            to mimic a different page.
+            */
+
+            width: 105%;
+            height: 125vh;
+            
+            /*
+            this allows the items to stack on top of each other and
+            be in the middle of the page
+            */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            /*
+            the hamburger menu will start all the way to the left past the
+            screen and will NOT be shown until the user clicks the hamburger menu.
+            */
+            margin-left: -110%; 
+
+            transition: all 0.5s ease;
+
+            
+    }
+
+    /*
+    when someone clicks on the hamburger menu(the image), the 
+    mobile menu will be shown
+    */
+    .nav-links.mobile-menu
+    {
+        margin-left: 0;
+    }
+
+    .nav-links ul
+    {   /*  if you were to put these in .nav-links, they wouldn't work 
+            since nav-links doesn't target each inidividual element. */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li
+    {  
+        /* 
+        to add even MORE space (we already put 25px of margin on 
+        the top and bottom but now we're adding another 25 on each side)
+        between each element!
+        */
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    /*--------------------THIS SECTION IS FOR THE BUTTON AND THE TITLE IN THE MIDDLE (FOR MOBILE)--------------------*/
+
+    .content
+    {
+        /*  this destroys hovering on the home page functionality
+        display: block;
+        position: relative;
+        */
+        padding: 5vh 20vw;
+        text-align: center;
+        
+    }
+
+
+    /* this is for "make date night a priority" text (FOR MOBILE)  */
+    .content h1
+    {
+        font-size: 25px;
+        color: #fff;
+        font-weight: 600;
+        transition: 0.3s;
+        margin-top: -30%;
+    }
+
+    /* for "unlock a core memory / select a state" button (FOR MOBILE) */
+    .content a
+    {
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        border: 2px solid #fff;
+        /* padding 14px on the top and bottom and 70 on the left and right*/
+        padding: 7px 5px;
+        border-radius: 50px;
+        margin-top: 34vh;
+        transition: 0.3s;
+    }
+
+    .content a:hover
+    {
+        background: #fff;
+        color: black;
+    }
+
+    /* --------------------THIS SECTION IS FOR THE VIDEO (FOR MOBILE)-------------------- */
+    .video
+    {
+        padding-top: 5vh;
+        width: 90vw;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*--------------------THIS SECTION IS FOR INFLUENCERS TAB (FOR MOBILE)--------------------*/
+    
+
+    .heading
+    {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        margin-right: 50%;
+
+    }
+
+    .heading span
+    {
+        font-size: 15px;
+    }
+
+    .profiles
+    {
+        margin: 20px 0;
+        flex-flow: row;
+        margin-right: 50%;
+
+    }
+
+    .profile p
+    {
+        margin: 20px 10px 80px 10px;
+        display: flex;
+        
+    }
+    
+    .profile .profile-img 
+    {
+        filter: grayscale(0%);    
+    }
+
+    /* for the "see locals near you!" button */
+    h3
+    {
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        border: 2px solid #fff;
+        /* padding 14px on the top and bottom and 70 on the left and right*/
+        padding: 14px 5px;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+
+    
+}
+
+
+
+/*--------------------THIS SECTION IS FOR TABLET SCREENS--------------------*/
+
+
+/*--------------------THIS SECTION IS FOR INFLUENCERS TAB (FOR TABLET)--------------------*/
+
+@media only screen and (max-width: 1150px)
+{
+    .profiles
+    {
+        flex-direction: row;
+        
+    }
+
+    .profile
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile p
+    {
+        text-align: center;
+        /* margin: 20px 60px 80px 60px; */
+        font-size: 20px;
+    }
+
+    .profile .profile-img 
+    {
+        height: 125px;
+        width: 125px;
+        filter: grayscale(0%);    
+    }
+}
