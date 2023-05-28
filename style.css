@@ -5,8 +5,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Fraunces', serif;
-
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -15,11 +14,11 @@
 body
 {
    
-    font-family: 'Fraunces', serif;
+    font-family: 'Open Sans', sans-serif;
     /* font-family: 'Arapey', serif; */
     font-weight: 200;
-    background-image:  linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), 
-    url("img/backdrop2.jpg"); 
+    /*      background-image:  linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url("img/backdrop2.jpg");     */
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("img/backdrop2.jpg"); 
     /* background-color: black; */
     /* to remove excess whitespace and the scroll bar */
     overflow-x: hidden;
@@ -28,7 +27,13 @@ body
 
 
 
-/* */
+/*--------------------THIS SECTION IS FOR DESKTOP/LAPTOP SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR DESKTOP/LAPTOP SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR DESKTOP/LAPTOP SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR DESKTOP/LAPTOP SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR DESKTOP/LAPTOP SCREENS--------------------*/
+
+
 header
 {
     /* these settings are so the nav bar takes up all the space it needs. */
@@ -75,6 +80,7 @@ header
 {
     margin-top: 2%;
 }
+
 .navbar .nav-links ul 
 {
     display: flex;      /* this puts the nav-link elements side by side instead of being stacked on each other */
@@ -135,10 +141,10 @@ header
 }
 
 
-/* this is for "make date night a priority" text */
+/* this is for "Find Trending Date Night Spots Loved by Locals!" text */
 .content h1
 {
-    font-size: 37px;
+    font-size: 32px;
     color: #fff;
     font-weight: 600;
     transition: 0.3s;
@@ -185,7 +191,7 @@ video
     position: absolute;
     
     /* backdrop ver.*/
-    top: 15vh;
+    top: 16%;
     left: 5vw;
     width: 90vw;
     height: 70vh;
@@ -213,7 +219,7 @@ video
     width: 100%;
     position: relative;
     padding: 5% 25%;
-    /* background: orange; */
+    background-color: rgba(56, 56, 56, 0.5); 
     /* background-image: url("img/backdrop2.jpg"); */
 }
 
@@ -221,15 +227,16 @@ video
 {
     margin: 20px 40px;
     color: white;
+    
 }
 
-/* this is for "meet Locals in Your City! */
+/* this is for "meet our local influencers! */
 .heading
 {
     display: inline;
     text-align: center;
     font-size: 60px;
-    background-color: rgba(56, 56, 56, 0.5);
+    /* background-color: rgba(56, 56, 56, 0.5); */
     border-radius: 10px 10px 10px 10px;
     padding: 15px 15px;
     color: #fff;
@@ -317,18 +324,11 @@ h3:hover
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------THIS SECTION IS FOR SMARTPHONE SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR MOBILE SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR MOBILE SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR MOBILE SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR MOBILE SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR MOBILE SCREENS--------------------*/
 
 /* 
 for any screen sizes below a width of 900px, 
@@ -468,14 +468,14 @@ lets hide the nav links and display a hamburger menu for mobile.
     }
 
 
-    /* this is for "make date night a priority" text (FOR MOBILE)  */
+    /* this is for "Find Trending Date Night Spots Loved by Locals!" text (FOR MOBILE)  */
     .content h1
     {
-        font-size: 25px;
+        font-size: 20px;
         color: #fff;
         font-weight: 600;
         transition: 0.3s;
-        margin-top: -30%;
+        margin-top: -35%;
     }
 
     /* for "unlock a core memory / select a state" button (FOR MOBILE) */
@@ -514,7 +514,7 @@ lets hide the nav links and display a hamburger menu for mobile.
     
 
 
-    /* this is for "meet Locals in Your City! (FOR MOBILE) */
+    /* this is for "meet our local influencers! (FOR MOBILE) */
     .heading
     {
         display: inline;
@@ -522,10 +522,10 @@ lets hide the nav links and display a hamburger menu for mobile.
         font-size: 20px;
         color: white;
         text-align: center;
-        margin-right: 38%;
-        background-color: rgba(56, 56, 56, 0.5);
+        margin-right: 20%;
+        /* background-color: rgba(56, 56, 56, 0.5); */
         border-radius: 10px 10px 10px 10px;
-        padding: 10px 10px;
+        padding: 10px;
         color: #fff;
     }
 
@@ -573,6 +573,10 @@ lets hide the nav links and display a hamburger menu for mobile.
 
 
 
+/*--------------------THIS SECTION IS FOR TABLET SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR TABLET SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR TABLET SCREENS--------------------*/
+/*--------------------THIS SECTION IS FOR TABLET SCREENS--------------------*/
 /*--------------------THIS SECTION IS FOR TABLET SCREENS--------------------*/
 
 
