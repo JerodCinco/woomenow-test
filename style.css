@@ -639,7 +639,7 @@ lets hide the nav links and display a hamburger menu for mobile.
     .dropdown
     {
         position: absolute;
-        top: 52.5%;
+        top: 54.5%;
         left: 30%;
         display: flex;
         /*
