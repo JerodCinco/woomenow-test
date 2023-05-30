@@ -150,34 +150,188 @@ header
 }
 
 
-/* to create hover effect 
-.content h1:hover
-{
-    -webkit-text-stroke: 2px #fff;
-    color: transparent;
-}
-*/
 
-/* for "unlock a core memory / select a state" button */
+/* for content whitespace */
 .content a
 {
-    text-decoration: none;
     display: block;
-    color: black;
-    background-color: #fff;
     font-size: 35px;
-    border: 2px solid black;
     /* padding 14px on the top and bottom and 70 on the left and right*/
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 75vh;
-    transition: 0.3s;
 }
 
-.content a:hover
+
+/*--------------------THIS SECTION IS FOR THE DROPDOWN MENU--------------------*/
+
+.dropdown
 {
-    background: black;
-    color: #fff;
+    position: absolute;
+    top: 89%;
+    left: 46%;
+    /* padding: 20px 90px; 20px on top/bottom, 7% on left and right*/
+    display: flex;
+    z-index: 1;
+}
+
+.dropdown .menu ul
+{
+    list-style: none;
+    border-radius: 0.5em;
+}
+
+.dropdown .menu ul li
+{
+    position: relative;
+    /* to rearrange the list from vertical top to bottom to horizontal left to right*/
+    /* float: left; */
+    background-color: #eee;
+    border-radius: 0.5em;
+}
+
+.dropdown .menu ul li a
+{
+    font-size: 20px;
+    padding: 20px;
+    /* color: #333; */ /* this sets the text color*/
+    display: block;
+    border-radius: 0.5em;
+
+
+}
+
+.dropdown .menu ul li a:hover
+{
+    background: #fff;
+    
+
+}
+
+/* this targets florida, texas, etc. */
+.dropdown .menu ul li ul
+{
+    position: absolute;
+    left: 0;
+    top: -445%;
+    width: 200px;
+    display: none;
+    border-radius: 0.5em;
+
+}
+
+.dropdown .menu ul li ul li
+{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.dropdown .menu ul li ul li a
+{
+    border-radius: 0.5em;
+}
+
+.dropdown .menu ul li ul li ul
+{
+    left: 200px;
+    top: 0;
+}
+
+/* 
+focus within is when a user taps/clicks on that button 
+*/
+.dropdown .menu ul li:focus-within > ul,
+.dropdown .menu ul li:hover > ul 
+{
+    display: initial;
+}
+
+/*--------------------THIS SECTION IS FOR 2nd DROPDOWN BUTTON  --------------------*/
+
+.dropdown2
+{
+    position: absolute;
+    top: 84%;
+    left: 30%;
+    display: flex;
+    /*
+    align-items: center;
+    justify-content: space-between;
+    */
+    z-index: 1;
+}
+
+.dropdown2 .menu ul
+{
+    list-style: none;
+    border-radius: 0.5em;
+}
+
+.dropdown2 .menu ul li
+{
+    position: relative;
+    /* to rearrange the list from vertical top to bottom to horizontal left to right*/
+    /* float: left; */
+    background-color: #eee;
+    border-radius: 0.5em;
+}
+
+.dropdown2 .menu ul li a
+{
+    font-size: 20px;
+    padding: 20px;
+    /* color: #333; */ /* this sets the text color*/
+    display: block;
+    border-radius: 0.5em;
+
+
+}
+
+.dropdown2 .menu ul li a:hover
+{
+    background: #fff;
+    
+
+}
+
+/* this targets florida, texas, etc. */
+.dropdown2 .menu ul li ul
+{
+    position: absolute;
+    left: 0;
+    top: -445%;
+    width: 200px;
+    display: none;
+    border-radius: 0.5em;
+
+}
+
+.dropdown2 .menu ul li ul li
+{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.dropdown2 .menu ul li ul li a
+{
+    border-radius: 0.5em;
+}
+
+.dropdown2 .menu ul li ul li ul
+{
+    left: 200px;
+    top: 0;
+}
+
+/* 
+focus within is when a user taps/clicks on that button 
+*/
+.dropdown2 .menu ul li:focus-within > ul,
+.dropdown2 .menu ul li:hover > ul 
+{
+    display: initial;
 }
 
 
@@ -187,7 +341,7 @@ header
 video
 {
     position: absolute;
-    
+
     /* backdrop ver.*/
     top: 16%;
     left: 5vw;
@@ -332,7 +486,7 @@ h3:hover
 for any screen sizes below a width of 900px, 
 lets hide the nav links and display a hamburger menu for mobile. 
 */
-@media screen and (max-width: 900px)
+@media screen and (max-width: 480px)
 {
 
     html, body
@@ -341,8 +495,6 @@ lets hide the nav links and display a hamburger menu for mobile.
         margin: 0;
         padding: 0;
         overflow-x: hidden;
-
-
     }
     
     /* 
@@ -353,7 +505,7 @@ lets hide the nav links and display a hamburger menu for mobile.
     .navbar
     {
         position: relative;
-        z-index: 1;
+        z-index: 2;
     }
     
     .navbar .logo-pic
@@ -362,7 +514,7 @@ lets hide the nav links and display a hamburger menu for mobile.
         height: 20%;
         font-size: 2em;     /*   em generally means the point size of the font in question    */
         font-weight: bold;
-        margin-left: -6vw;
+        margin-left: -6%;
         margin-top: 5vh;  
     }
     
@@ -452,7 +604,8 @@ lets hide the nav links and display a hamburger menu for mobile.
         font-size: 1.2em;
     }
 
-    /*--------------------THIS SECTION IS FOR THE BUTTON AND THE TITLE IN THE MIDDLE (FOR MOBILE)--------------------*/
+    /*--------------------TTHIS SECTION IS FOR TITLE AND WHITESPACE (FOR MOBILE)--------------------*/
+
 
     .content
     {
@@ -471,12 +624,12 @@ lets hide the nav links and display a hamburger menu for mobile.
     {
         font-size: 20px;
         color: #fff;
-        font-weight: 600;
+        font-weight: 400;
         transition: 0.3s;
-        margin-top: -35%;
+        margin-top: -30%;
     }
 
-    /* for "unlock a core memory / select a state" button (FOR MOBILE) */
+    /* for content whitespace */
     .content a
     {
         text-decoration: none;
@@ -487,20 +640,57 @@ lets hide the nav links and display a hamburger menu for mobile.
         /* padding 14px on the top and bottom and 70 on the left and right*/
         padding: 7px 5px;
         border-radius: 50px;
-        margin-top: 34vh;
+        margin-top: 45vh;
         transition: 0.3s;
+        opacity: 0;
     }
 
-    .content a:hover
+    /*--------------------THIS SECTION IS FOR THE DROPDOWN MENU (FOR MOBILE)--------------------*/
+
+    .dropdown
     {
-        background: #fff;
-        color: black;
+        position: absolute;
+        top: 52.5%;
+        left: 30%;
+        display: flex;
+        /*
+        align-items: center;
+        justify-content: space-between;
+        */
+        z-index: 1;
     }
 
+    /* this targets pages and galleries*/
+    .dropdown .menu ul li ul
+    {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 200px;
+        display: none;
+        border-radius: 0.5em;
+    }
+
+    /*--------------------THIS SECTION IS FOR THE 2nd  DROPDOWN MENU (FOR MOBILE)--------------------*/
+
+
+    .dropdown2
+    {
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        display: flex;
+        /*
+        align-items: center;
+        justify-content: space-between;
+        */
+        z-index: 1;
+    }
+ 
     /* --------------------THIS SECTION IS FOR THE VIDEO (FOR MOBILE)-------------------- */
     .video
     {
-        padding-top: 5vh;
+        padding-top: 8vh;
         width: 90vw;
         height: 25vh;
         display: flex;
@@ -509,14 +699,12 @@ lets hide the nav links and display a hamburger menu for mobile.
     }
 
     /*--------------------THIS SECTION IS FOR INFLUENCERS TAB (FOR MOBILE)--------------------*/
-    
 
 
     /* this is for "meet our local influencers! (FOR MOBILE) */
     .heading
     {
         display: inline;
-
         font-size: 20px;
         color: white;
         text-align: center;
@@ -552,20 +740,6 @@ lets hide the nav links and display a hamburger menu for mobile.
         filter: grayscale(0%);    
     }
 
-    /* for the "see locals near you!" button */
-    h3
-    {   
-        text-decoration: none;
-        display: inline-block;
-        color: #fff;
-        font-size: 20px;
-        border: 2px solid #fff;
-        /* padding 14px on the top and bottom and 70 on the left and right*/
-        padding: 14px 5px;
-        border-radius: 50px;
-        transition: 0.3s;
-    }
-
     
 }
 
@@ -577,11 +751,199 @@ lets hide the nav links and display a hamburger menu for mobile.
 /*--------------------THIS SECTION IS FOR TABLET SCREENS--------------------*/
 /*--------------------THIS SECTION IS FOR TABLET SCREENS--------------------*/
 
-
-/*--------------------THIS SECTION IS FOR INFLUENCERS TAB (FOR TABLET)--------------------*/
-
-@media only screen and (max-width: 1150px)
+@media screen and (max-width: 1024px)
 {
+    
+    html, body
+    {
+        /* to remove excess whitespace */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    /* 
+    this is to reposition the ADVENTURE text, but your code
+    (a little different than the video) seems to do this already/
+    */
+
+    .navbar
+    {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .navbar .logo-pic
+    {
+        width: 50%;
+        height: 20%;
+        font-size: 2em;     /*   em generally means the point size of the font in question    */
+        font-weight: bold;
+        margin-left: -6%;
+        margin-top: 5vh;  
+    }
+    
+
+    .navbar .menu-hamburger 
+    {   /* why block and not flex here? */
+        display: block;
+        margin-top: 4vh;
+        
+    }
+
+    .nav-links
+    {   
+            /* */
+            top: -50px;
+            left: -50px;
+        
+            /* 
+            instead of displaying this on the screen, when the hamburger menu is 
+            clicked these nav links will show.  
+            */
+            position: absolute;
+
+            /* TIP: we can use background color to see how much 
+            space (including margin) the targeted class takes up. */
+            /* 
+            don't use decimals, they're not supported on safari iOS 
+            background-color: rgba(255, 255, 255, 0.299); 
+            */
+            background-color: rgba(49, 49, 49, 0.299);
+
+            /* to blur the background, including the webkit fixed the blur effect on mobile hamburger menu*/
+            -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+            /* 
+            using width 100% so that the nav links can take up the whole screen 
+            to mimic a different page.
+            */
+
+            width: 105%;
+            height: 125vh;
+            
+            /*
+            this allows the items to stack on top of each other and
+            be in the middle of the page
+            */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            /*
+            the hamburger menu will start all the way to the left past the
+            screen and will NOT be shown until the user clicks the hamburger menu.
+            */
+            margin-left: -110%; 
+
+            transition: all 0.5s ease;
+
+            
+    }
+
+    /*
+    when someone clicks on the hamburger menu(the image), the 
+    mobile menu will be shown
+    */
+    .nav-links.mobile-menu
+    {
+        margin-left: 0;
+    }
+
+    .nav-links ul
+    {   /*  if you were to put these in .nav-links, they wouldn't work 
+            since nav-links doesn't target each inidividual element. */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li
+    {  
+        /* 
+        to add even MORE space (we already put 25px of margin on 
+        the top and bottom but now we're adding another 25 on each side)
+        between each element!
+        */
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    /*--------------------TTHIS SECTION IS FOR TITLE AND WHITESPACE (FOR TABLET)--------------------*/
+
+    .content
+    {
+        /*  this destroys hovering on the home page functionality
+        display: block;
+        position: relative;
+        */
+        padding: 5vh 20vw;
+        text-align: center;
+        
+    }
+
+
+    /* this is for "Find Trending Date Night Spots Loved by Locals!" text (FOR TABLET)  */
+    .content h1
+    {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 400;
+        transition: 0.3s;
+        margin-top: -20%;
+    }
+
+     
+
+    /*--------------------THIS SECTION IS FOR THE DROPDOWN MENU (FOR TABLET)--------------------*/
+
+    .dropdown
+    {
+        position: absolute;
+        top: 52.5%;
+        left: 30%;
+        display: flex;
+        /*
+        align-items: center;
+        justify-content: space-between;
+        */
+        z-index: 1;
+    }
+
+    /* this targets pages and galleries*/
+    .dropdown .menu ul li ul
+    {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 200px;
+        display: none;
+        border-radius: 0.5em;
+    }
+
+    /*--------------------THIS SECTION IS FOR THE 2nd DROPDOWN MENU (FOR TABLET)--------------------*/
+
+
+    .dropdown2
+    {
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        display: flex;
+        /*
+        align-items: center;
+        justify-content: space-between;
+        */
+        z-index: 1;
+    }
+
+
+    /*--------------------THIS SECTION IS FOR INFLUENCERS TAB (FOR TABLET)--------------------*/
+
+    .heading
+    {
+        font-size: 25px;
+    }
     .profiles
     {
         flex-direction: row;
@@ -608,4 +970,6 @@ lets hide the nav links and display a hamburger menu for mobile.
         width: 125px;
         filter: grayscale(0%);    
     }
+
+
 }
