@@ -185,11 +185,9 @@ header
 {
     font-size: 20px;
     padding: 20px;
-    /* color: #333; */ /* this sets the text color*/
+    color: #333;  /* this sets the text color*/
     display: block;
     border-radius: 0.5em;
-
-
 }
 
 .dropdown .menu ul li a:hover
@@ -242,7 +240,7 @@ focus within is when a user taps/clicks on that button
 {
     position: absolute;
     top: 84%;
-    left: 30%;
+    left: 26.5%;
     display: flex;
     /*
     align-items: center;
@@ -270,7 +268,7 @@ focus within is when a user taps/clicks on that button
 {
     font-size: 20px;
     padding: 20px;
-    /* color: #333; */ /* this sets the text color*/
+    color: #333;  /* this sets the text color*/
     display: block;
     border-radius: 0.5em;
 
@@ -667,7 +665,7 @@ lets hide the nav links and display a hamburger menu for mobile.
     {
         position: absolute;
         top: 80%;
-        left: 20%;
+        left: 9.5%;
         display: flex;
         /*
         align-items: center;
@@ -755,7 +753,8 @@ lets hide the nav links and display a hamburger menu for mobile.
     
     body
     {
-        background-image:  linear-gradient(rgba(218, 15, 15, 0.5), rgba(218, 15, 15, 0.25)), url("img/backdrop2.jpg"); 
+        /* background-image:  linear-gradient(rgba(218, 15, 15, 0.5), rgba(218, 15, 15, 0.25)), url("img/backdrop2.jpg"); 
+        */
     }
 
     html, body
@@ -905,8 +904,8 @@ lets hide the nav links and display a hamburger menu for mobile.
     .dropdown
     {
         position: absolute;
-        top: 52.5%;
-        left: 30%;
+        top: 79.5%;
+        left: 40%;
         display: flex;
         /*
         align-items: center;
@@ -933,7 +932,7 @@ lets hide the nav links and display a hamburger menu for mobile.
     {
         position: absolute;
         top: 80%;
-        left: 20%;
+        left: 22%;
         display: flex;
         /*
         align-items: center;
@@ -942,6 +941,16 @@ lets hide the nav links and display a hamburger menu for mobile.
         z-index: 1;
     }
 
+    /* --------------------THIS SECTION IS FOR THE VIDEO (FOR MOBILE)-------------------- */
+    .video
+    {
+        padding-top: 4vh;
+        width: 90%;
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     /*--------------------THIS SECTION IS FOR INFLUENCERS TAB (FOR TABLET)--------------------*/
 
