@@ -16,8 +16,10 @@ body
    
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    background-image:  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("img/backdrop2.jpg"); 
-    /* background-color: black; */
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("img/backdrop1.jpg"); 
+    /* background-position: 20% 40%; */
+    /* initial or center */
+    background-position: initial;
     /* to remove excess whitespace and the scroll bar */
     overflow-x: hidden;
     /* overflow-y: hidden; */
@@ -135,7 +137,7 @@ header
 {
     font-size: 32px;
     color: #fff;
-    font-weight: 600;
+    font-weight: bold;
     transition: 0.3s;
     margin-top: 2%;
 }
@@ -153,6 +155,12 @@ header
     margin-top: 75vh;
 }
 
+/* for space at the bottom of the page */
+.space
+{   
+    background-color: rgba(56, 56, 56, 0.5); 
+    padding: 7% 20%;
+}
 
 /*--------------------THIS SECTION IS FOR THE DROPDOWN MENU--------------------*/
 
@@ -169,7 +177,7 @@ header
 .dropdown .menu ul
 {
     list-style: none;
-    border-radius: 0.5em;
+    border-radius: 50px;
 }
 
 .dropdown .menu ul li
@@ -178,21 +186,23 @@ header
     /* to rearrange the list from vertical top to bottom to horizontal left to right*/
     /* float: left; */
     background-color: #eee;
-    border-radius: 0.5em;
+    border-radius: 50px;
 }
 
 .dropdown .menu ul li a
 {
     font-size: 20px;
-    padding: 20px;
+    padding: 15px;
     color: #333;  /* this sets the text color*/
     display: block;
-    border-radius: 0.5em;
+    border-radius: 50px;
 }
 
 .dropdown .menu ul li a:hover
 {
     background: #fff;
+    border-radius: 50px;
+
 }
 
 /* this targets florida, texas, etc. */
@@ -200,7 +210,7 @@ header
 {
     position: absolute;
     left: 0;
-    top: -445%;
+    top: 100%;
     width: 200px;
     display: none;
     border-radius: 0.5em;
@@ -239,8 +249,8 @@ focus within is when a user taps/clicks on that button
 .dropdown2
 {
     position: absolute;
-    top: 84%;
-    left: 26.5%;
+    top: 78%;
+    left: 27%;
     display: flex;
     /*
     align-items: center;
@@ -252,7 +262,7 @@ focus within is when a user taps/clicks on that button
 .dropdown2 .menu ul
 {
     list-style: none;
-    border-radius: 0.5em;
+    border-radius: 50px;
 }
 
 .dropdown2 .menu ul li
@@ -261,16 +271,16 @@ focus within is when a user taps/clicks on that button
     /* to rearrange the list from vertical top to bottom to horizontal left to right*/
     /* float: left; */
     background-color: #eee;
-    border-radius: 0.5em;
+    border-radius: 50px;
 }
 
 .dropdown2 .menu ul li a
 {
     font-size: 20px;
-    padding: 20px;
+    padding: 15px;
     color: #333;  /* this sets the text color*/
     display: block;
-    border-radius: 0.5em;
+    border-radius: 50px;
 
 
 }
@@ -278,7 +288,8 @@ focus within is when a user taps/clicks on that button
 .dropdown2 .menu ul li a:hover
 {
     background: #fff;
-    
+    border-radius: 50px;
+
 
 }
 
@@ -287,10 +298,10 @@ focus within is when a user taps/clicks on that button
 {
     position: absolute;
     left: 0;
-    top: -445%;
+    top: 100%;
     width: 200px;
     display: none;
-    border-radius: 0.5em;
+    border-radius: 50px;
 
 }
 
@@ -357,7 +368,7 @@ video
     
     width: 100%;
     position: relative;
-    padding: 5% 25%;
+    padding: 6% 25%;
     background-color: rgba(56, 56, 56, 0.5); 
     /* background-image: url("img/backdrop2.jpg"); */
 }
@@ -632,13 +643,18 @@ lets hide the nav links and display a hamburger menu for mobile.
         opacity: 0;
     }
 
+    .space
+    {
+        padding: 20% 20%;
+    }
+
     /*--------------------THIS SECTION IS FOR THE DROPDOWN MENU (FOR MOBILE)--------------------*/
 
     .dropdown
     {
         position: absolute;
         top: 58.5%;
-        left: 30%;
+        left: 35%;
         display: flex;
         /*
         align-items: center;
@@ -658,6 +674,15 @@ lets hide the nav links and display a hamburger menu for mobile.
         border-radius: 0.5em;
     }
 
+    .dropdown .menu ul li a
+    {
+        font-size: 18px;
+        padding: 10px;
+        color: #333;  /* this setss the text color*/
+        display: block;
+        border-radius: 0.5em;
+    }
+
     /*--------------------THIS SECTION IS FOR THE 2nd  DROPDOWN MENU (FOR MOBILE)--------------------*/
 
 
@@ -665,7 +690,7 @@ lets hide the nav links and display a hamburger menu for mobile.
     {
         position: absolute;
         top: 80%;
-        left: 9.5%;
+        left: 10%;
         display: flex;
         /*
         align-items: center;
@@ -673,7 +698,16 @@ lets hide the nav links and display a hamburger menu for mobile.
         */
         z-index: 1;
     }
- 
+    
+    .dropdown2 .menu ul li a
+    {
+        font-size: 18px;
+        padding: 10px;
+        color: #333;  /* this setss the text color*/
+        display: block;
+        border-radius: 0.5em;
+    }
+
     /* --------------------THIS SECTION IS FOR THE VIDEO (FOR MOBILE)-------------------- */
     .video
     {
@@ -881,8 +915,7 @@ lets hide the nav links and display a hamburger menu for mobile.
         display: block;
         position: relative;
         */
-        padding: 5vh 20vw;
-        text-align: center;
+        padding: 5% 20vw;
         
     }
 
@@ -897,6 +930,10 @@ lets hide the nav links and display a hamburger menu for mobile.
         margin-top: -20%;
     }
 
+    .space
+    {
+        padding: 20% 20%;
+    }
      
 
     /*--------------------THIS SECTION IS FOR THE DROPDOWN MENU (FOR TABLET)--------------------*/
@@ -905,7 +942,7 @@ lets hide the nav links and display a hamburger menu for mobile.
     {
         position: absolute;
         top: 79.5%;
-        left: 40%;
+        left: 43%;
         display: flex;
         /*
         align-items: center;
@@ -925,6 +962,17 @@ lets hide the nav links and display a hamburger menu for mobile.
         border-radius: 0.5em;
     }
 
+    .dropdown .menu ul li a
+    {
+        font-size: 18px;
+        padding: 10px;
+        color: #333;  /* this setss the text color*/
+        display: block;
+        border-radius: 0.5em;
+    }
+
+    
+
     /*--------------------THIS SECTION IS FOR THE 2nd DROPDOWN MENU (FOR TABLET)--------------------*/
 
 
@@ -932,7 +980,7 @@ lets hide the nav links and display a hamburger menu for mobile.
     {
         position: absolute;
         top: 80%;
-        left: 22%;
+        left: 21.5%;
         display: flex;
         /*
         align-items: center;
@@ -941,6 +989,15 @@ lets hide the nav links and display a hamburger menu for mobile.
         z-index: 1;
     }
 
+    .dropdown2 .menu ul li a
+    {
+        font-size: 18px;
+        padding: 10px;
+        color: #333;  /* this setss the text color*/
+        display: block;
+        border-radius: 0.5em;
+    }
+    
     /* --------------------THIS SECTION IS FOR THE VIDEO (FOR MOBILE)-------------------- */
     .video
     {
