@@ -16,7 +16,7 @@ body
    
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    background-image:  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("img/backdrop1.jpg"); 
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("img/backdrop3.jpg"); 
     /* background-position: 20% 40%; */
     /* initial or center */
     background-position: initial;
