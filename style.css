@@ -16,7 +16,8 @@ body
 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    background-image:  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("img/backdrop3.jpg");
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.5), 
+                    rgba(255, 255, 255, 0.25)), url("img/backdrop3.jpg");
     /* 
     initial or center 
     background-position: initial
@@ -202,7 +203,7 @@ header
 .dropdown .menu ul li a
 {
     font-size: 20px;
-    padding: 15px;
+    padding: 20px;
     color: #333;  /* this sets the text color*/
     display: block;
 
@@ -279,7 +280,7 @@ focus within is when a user taps/clicks on that button
 .dropdown2 .menu ul li a
 {
     font-size: 20px;
-    padding: 15px;
+    padding: 20px;
     color: #333;  /* this sets the text color*/
     display: block;
 }
