@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 
@@ -13,13 +14,13 @@
 
 body
 {
-   
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    background-image:  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("img/backdrop3.jpg"); 
-    /* background-position: 20% 40%; */
-    /* initial or center */
-    background-position: initial;
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25)), url("img/backdrop3.jpg");
+    /* 
+    initial or center 
+    background-position: initial
+    */
     /* to remove excess whitespace and the scroll bar */
     overflow-x: hidden;
     /* overflow-y: hidden; */
@@ -39,7 +40,6 @@ header
     /* these settings are so the nav bar takes up all the space it needs. */
     height: 100%;
     width: 100%;
-    /* background-image: url(img/landscape.jpg); */
     /* notice that it doens't load up on legacy/live servers. */
     background-size: cover;
 }
@@ -102,7 +102,6 @@ header
 /* this targets the HOME button */
 .navbar .nav-links ul li.active a
 {
-    /* color: #ed3c57; */
     font-weight: 600;
     transition: 0.3s;
 }
@@ -158,8 +157,20 @@ header
 /* for space at the bottom of the page */
 .space
 {   
-    background-color: rgba(56, 56, 56, 0.5); 
-    padding: 7% 20%;
+
+    margin-top: -11%;
+    margin-left: -25%;
+    z-index: -2;
+    padding: 15% 0%;
+    z-index: -1000;
+    
+    /* to flip image horizontally */
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
 }
 
 /*--------------------THIS SECTION IS FOR THE DROPDOWN MENU--------------------*/
@@ -177,16 +188,15 @@ header
 .dropdown .menu ul
 {
     list-style: none;
-    border-radius: 50px;
 }
+
+
 
 .dropdown .menu ul li
 {
     position: relative;
-    /* to rearrange the list from vertical top to bottom to horizontal left to right*/
-    /* float: left; */
     background-color: #eee;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .dropdown .menu ul li a
@@ -195,14 +205,14 @@ header
     padding: 15px;
     color: #333;  /* this sets the text color*/
     display: block;
-    border-radius: 50px;
+
 }
 
 .dropdown .menu ul li a:hover
 {
     background: #fff;
+  
     border-radius: 50px;
-
 }
 
 /* this targets florida, texas, etc. */
@@ -249,13 +259,9 @@ focus within is when a user taps/clicks on that button
 .dropdown2
 {
     position: absolute;
-    top: 78%;
+    top: 63%;
     left: 27%;
     display: flex;
-    /*
-    align-items: center;
-    justify-content: space-between;
-    */
     z-index: 1;
 }
 
@@ -268,8 +274,6 @@ focus within is when a user taps/clicks on that button
 .dropdown2 .menu ul li
 {
     position: relative;
-    /* to rearrange the list from vertical top to bottom to horizontal left to right*/
-    /* float: left; */
     background-color: #eee;
     border-radius: 50px;
 }
@@ -370,7 +374,6 @@ video
     position: relative;
     padding: 6% 25%;
     background-color: rgba(56, 56, 56, 0.5); 
-    /* background-image: url("img/backdrop2.jpg"); */
 }
 
 .container
@@ -383,12 +386,9 @@ video
 /* this is for "meet our local influencers! */
 .heading
 {
-    display: inline;
     text-align: center;
     font-size: 60px;
-    /* background-color: rgba(56, 56, 56, 0.5); */
-    border-radius: 10px 10px 10px 10px;
-    padding: 15px 15px;
+    margin-left: -50%;
     color: #fff;
 }
 
@@ -541,7 +541,6 @@ lets hide the nav links and display a hamburger menu for mobile.
             space (including margin) the targeted class takes up. */
             /* 
             don't use decimals, they're not supported on safari iOS 
-            background-color: rgba(255, 255, 255, 0.299); 
             */
             background-color: rgba(49, 49, 49, 0.299);
 
@@ -621,7 +620,7 @@ lets hide the nav links and display a hamburger menu for mobile.
     /* this is for "Find Trending Date Night Spots Loved by Locals!" text (FOR MOBILE)  */
     .content h1
     {
-        font-size: 20px;
+        font-size: 115%;
         color: #fff;
         font-weight: bold;
         transition: 0.3s;
@@ -646,7 +645,12 @@ lets hide the nav links and display a hamburger menu for mobile.
 
     .space
     {
-        padding: 20% 20%;
+        padding: 30% 20%;
+    }
+
+    .space img
+    {
+        display: none;
     }
 
     /*--------------------THIS SECTION IS FOR THE DROPDOWN MENU (FOR MOBILE)--------------------*/
@@ -656,11 +660,7 @@ lets hide the nav links and display a hamburger menu for mobile.
         position: absolute;
         top: 58.5%;
         left: 35%;
-        display: flex;
-        /*
-        align-items: center;
-        justify-content: space-between;
-        */
+        display: flex; 
         z-index: 1;
     }
 
@@ -690,13 +690,9 @@ lets hide the nav links and display a hamburger menu for mobile.
     .dropdown2
     {
         position: absolute;
-        top: 80%;
+        top: 55%;
         left: 10%;
         display: flex;
-        /*
-        align-items: center;
-        justify-content: space-between;
-        */
         z-index: 1;
     }
     
@@ -726,14 +722,9 @@ lets hide the nav links and display a hamburger menu for mobile.
     /* this is for "meet our local influencers! (FOR MOBILE) */
     .heading
     {
-        display: inline;
-        font-size: 20px;
-        color: white;
         text-align: center;
-        margin-right: 20%;
-        /* background-color: rgba(56, 56, 56, 0.5); */
-        border-radius: 10px 10px 10px 10px;
-        padding: 10px;
+        font-size: 20px;
+        margin-left: -50%;
         color: #fff;
     }
 
@@ -786,12 +777,6 @@ lets hide the nav links and display a hamburger menu for mobile.
 /* @media screen and (max-width: 1024px) */
 {
     
-    body
-    {
-        /* background-image:  linear-gradient(rgba(218, 15, 15, 0.5), rgba(218, 15, 15, 0.25)), url("img/backdrop2.jpg"); 
-        */
-    }
-
     html, body
     {
         /* to remove excess whitespace */
@@ -933,9 +918,15 @@ lets hide the nav links and display a hamburger menu for mobile.
 
     .space
     {
+        background-color: linear-gradient(rgba(255, 255, 255, 0.5));
         padding: 20% 20%;
     }
-     
+    .space img
+    {
+        display: none;
+    }
+    
+   
 
     /*--------------------THIS SECTION IS FOR THE DROPDOWN MENU (FOR TABLET)--------------------*/
 
@@ -945,10 +936,6 @@ lets hide the nav links and display a hamburger menu for mobile.
         top: 79.5%;
         left: 43%;
         display: flex;
-        /*
-        align-items: center;
-        justify-content: space-between;
-        */
         z-index: 1;
     }
 
@@ -980,13 +967,9 @@ lets hide the nav links and display a hamburger menu for mobile.
     .dropdown2
     {
         position: absolute;
-        top: 80%;
+        top: 53%;
         left: 21.5%;
         display: flex;
-        /*
-        align-items: center;
-        justify-content: space-between;
-        */
         z-index: 1;
     }
 
@@ -1042,8 +1025,6 @@ lets hide the nav links and display a hamburger menu for mobile.
         width: 125px;
         filter: grayscale(0%);    
     }
-
-   
 
 
 }
