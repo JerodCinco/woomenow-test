@@ -228,7 +228,7 @@ lets hide the nav links and display a hamburger menu for mobile.
         padding: 120px;
 
         /* image backdrop positioning */
-        background-image:  linear-gradient(rgba(73, 73, 73, 0.4), rgba(255, 255, 255, 0.4)), url("/img/floridacities/tampa.jpg"); 
+        background-image:  linear-gradient(rgba(73, 73, 73, 0.4), rgba(255, 255, 255, 0.4)), url("img/floridacities/tampa.jpg"); 
         background-size: 130%;
         background-position: none;
 
@@ -242,7 +242,7 @@ lets hide the nav links and display a hamburger menu for mobile.
         padding: 120px;
 
         /* image backdrop positioning */
-        background-image:  linear-gradient(rgba(73, 73, 73, 0.2), rgba(255, 255, 255, 0.25)), url("/img/floridacities/stpetes.jpg"); 
+        background-image:  linear-gradient(rgba(73, 73, 73, 0.2), rgba(255, 255, 255, 0.25)), url("img/floridacities/stpetes.jpg"); 
         background-size: 190%;
         background-position: none;
     }
@@ -255,7 +255,7 @@ lets hide the nav links and display a hamburger menu for mobile.
         padding: 120px;
 
         /* image backdrop positioning */
-        background-image:  linear-gradient(rgba(53, 53, 53, 0.3), rgba(255, 255, 255, 0.3)), url("/img/floridacities/clearwater.jpg"); 
+        background-image:  linear-gradient(rgba(53, 53, 53, 0.3), rgba(255, 255, 255, 0.3)), url("img/floridacities/clearwater.jpg"); 
         background-size: 130%;
         background-position: 0% 30%;
     }
@@ -268,7 +268,7 @@ lets hide the nav links and display a hamburger menu for mobile.
         padding: 120px;
         
         /* image backdrop positioning */
-        background-image:  linear-gradient(rgba(53, 53, 53, 0.3), rgba(255, 255, 255, 0.3)), url("/img/floridacities/miami3.jpg"); 
+        background-image:  linear-gradient(rgba(53, 53, 53, 0.3), rgba(255, 255, 255, 0.3)), url("img/floridacities/miami3.jpg"); 
         background-size: 100%;
         background-position: 50% 50%;
     }
