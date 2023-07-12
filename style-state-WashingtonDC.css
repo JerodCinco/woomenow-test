@@ -11,6 +11,11 @@
     scroll-behavior: smooth;
 }
 
+body
+{
+    background-color: #1d1d1d;
+}
+
 /* black backdrop with state name*/
 header
 {
@@ -23,6 +28,7 @@ header
     position: relative;
     background-color: #1d1d1d;
     color: #eee;
+    
 }
 
 /* big state title at top */
@@ -57,13 +63,12 @@ h2
 {
     font-family: 'Allura', cursive;
     font-size: 55px;
-    padding-top: -20%;
     text-align: center;
     color: #333;
 }
 
 
-/* Washington DC */
+/* Tampa */
 .sec1
 {
     /* sizing and positioning */
@@ -71,25 +76,14 @@ h2
     padding: 180px;
 
     /* image backdrop positioning */
-    background-image:  linear-gradient(rgba(73, 73, 73, 0.6), rgba(255, 255, 255, 0.6)), url("img/statecities/state-WashingtonDC.jpg"); 
+    background-image:  linear-gradient(rgba(73, 73, 73, 0.4), rgba(255, 255, 255, 0.4)), url("img/statecities/state-WashingtonDC.jpg"); 
     background-size: 100%;
-    background-position: 50% 30%;
+    background-position: 50% 80%;
 
 }
 
 
-/* St.Pete */
-.sec2
-{
-    /* sizing and positioning */
-    position: relative;
-    padding: 180px;
 
-    /* image backdrop positioning */
-    background-image:  linear-gradient(rgba(73, 73, 73, 0.2), rgba(255, 255, 255, 0.25)), url("img/floridacities/stpete2.jpg"); 
-    background-size: cover;
-    background-position: 100% 100%;
-}
 
 h2
 {
@@ -98,42 +92,7 @@ h2
     
 }
 
-/* Clearwater */
-.sec3
-{
-    /* sizing and positioning */
-    position: relative;
-    padding: 180px;
 
-    /* image backdrop positioning */
-    background-image:  linear-gradient(rgba(53, 53, 53, 0.3), rgba(255, 255, 255, 0.3)), url("img/floridacities/clearwater.jpg"); 
-    background-size: 100%;
-    background-position: 0% 30%;
-}
-
-.sec3 h2
-{
-    white-space: nowrap;
-}
-
-
-/* Miami */
-.sec4
-{
-    /* sizing and positioning */
-    position: relative;
-    padding: 180px;
-    
-    /* image backdrop positioning */
-    background-image:  linear-gradient(rgba(53, 53, 53, 0.3), rgba(255, 255, 255, 0.3)), url("img/floridacities/miami3.jpg"); 
-    background-size: 100%;
-    background-position: 50% 50%;
-}
-
-.sec4 h2
-{
-    color: #eee;
-}
 
 /*--------------------THIS SECTION IS FOR THE DINING & EXPERIENCES BUTTON--------------------*/
 
@@ -236,8 +195,10 @@ lets hide the nav links and display a hamburger menu for mobile.
     /* big state title at top */
     header h1
     {
-        font-size: 1.3em;
+        padding-top: 1rem;
+        font-size: .55em;
         text-align: center;
+        white-space: nowrap;
     }
 
     .img
@@ -245,6 +206,7 @@ lets hide the nav links and display a hamburger menu for mobile.
         position: relative;
         z-index: 2;
     }
+
     /* WooMeNow woomenow Logo */
     a img
     {
@@ -261,7 +223,7 @@ lets hide the nav links and display a hamburger menu for mobile.
         left: 0rem;
     }
 
-    /* Tampa */
+    /* DC */
     .sec1
     {
         /* sizing and positioning */
@@ -269,54 +231,22 @@ lets hide the nav links and display a hamburger menu for mobile.
         padding: 120px;
 
         /* image backdrop positioning */
-        background-size: 150%;
+        background-size: 175%;
         background-position: none;
 
     }
 
-    /* St.Pete */
-    .sec2
+    .sec1 h2
     {
-        /* sizing and positioning */
-        position: relative;
-        padding: 120px;
-
-        /* image backdrop positioning */
-        background-size: 150%;
-        background-position: none;
-    }
-
-    /* Clearwater */
-    .sec3 h2
-    {   
-        font-size: 3em;
+        position: absolute;
+        left: 6.5rem;
         display: inline;
-        text-align: center;
-        word-wrap: nowrap;
+        font-size: 2em;
+        white-space: nowrap;
     }
 
-    .sec3
-    {
-        /* sizing and positioning */
-        position: relative;
-        padding: 120px;
+   
 
-        /* image backdrop positioning */
-        background-size: 150%;
-        background-position: 0% 30%;
-    }
-
-    /* Miami */
-    .sec4
-    {
-        /* sizing and positioning */
-        position: relative;
-        padding: 120px;
-        
-        /* image backdrop positioning */
-        background-size: 150%;
-        background-position: 50% 50%;
-    }
 
 /*--------------------THIS SECTION IS FOR THE DINING & EXPERIENCES BUTTON--------------------*/
 
